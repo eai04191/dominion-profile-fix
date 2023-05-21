@@ -1,13 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
     <head>
         <meta charset="UTF-8" />
         <link rel="icon" type="image/svg+xml" href="/vite.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Vite + TS</title>
+        <title>dominion-profile-fix</title>
     </head>
     <body>
-        <div id="app"></div>
+        <div id="app">
+            <div>
+                <h1>dominion-profile-fix</h1>
+                <p class="read-the-docs">
+                    Dominionのマルチプレイヤーで選択していないプレイヤーが入ってしまうようになったプロファイルを修正します。
+                </p>
+                <div class="card">
+                    <label for="file">profile.xml: </label>
+                    <input type="file" id="file" />
+                </div>
+                <p class="read-the-docs">
+                    <code>shell:appdata\TempleGates\Dominion</code><br />
+                    にあるprofile.xmlを選択して、ダウンロードしたprofile.xmlで上書きしてください。
+                </p>
+            </div>
+        </div>
         <script type="module" src="/src/main.ts"></script>
     </body>
 </html>
